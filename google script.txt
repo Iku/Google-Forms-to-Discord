@@ -19,9 +19,9 @@ function onSubmit(e) {
     "payload": JSON.stringify({
       "embeds": [
         {
-          "title":"Form Response",
+          "title":"TOP TEXT CHANGE THIS IN SCRIPT",
           "fields":items,
-          "footer":{"text": "BOTTOMTEXT"}
+          "footer":{"text": "BOTTOM TEXT CHANGE THIS IN SCRIPT"}
         }
       ]
     }
