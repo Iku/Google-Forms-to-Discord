@@ -9,7 +9,7 @@
 ## Step 3: Open Discord and go to Server Settings > Webhooks and Create a new Webhook. 
 ![Create a new Webhook.](https://pillow.s-ul.eu/9G6CaZ7P)
 
-### Note:The Channel is Important as this is the channel the responses will be sent
+### Note: The Channel is Important as this is the channel the responses will be sent to
 
 ## Step 4: Copy Webhook URL.
 ![Copy Webhook URL.](https://pillow.s-ul.eu/fcfrn7vt)
