@@ -17,7 +17,7 @@
 ## Step 3: go back to Google Forms and click the three dots in the top right corner and select Script editor
 ![script editor](https://pillow.s-ul.eu/iLfUuy9l.png)
 
-## Step 5: Paste the content of Script.txt and Replace the "WEBHOOKURL with your Webhook URL
+## Step 5: Paste the content of google script.js and Replace the "WEBHOOKURL with your Webhook URL
 ![paste](https://pillow.s-ul.eu/c5hZFugM)
 
 ## Step 6:Add a trigger![adding trigger](https://pillow.s-ul.eu/v27E8yOF)
