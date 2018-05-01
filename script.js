@@ -1,4 +1,4 @@
-﻿var POST_URL = "WEBHOOKURL";
+var postUrl = "WEBHOOKURL";
 
 function onSubmit(e) {
   var response = e.response.getItemResponses();
