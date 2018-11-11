@@ -1,7 +1,10 @@
 ﻿var POST_URL = "WEBHOOKURL";
 
 function onSubmit(e) {
-  var response = e.response.getItemResponses();
+  var form = FormApp.getActiveForm();
+  var allResponses = form.getResponses();
+  var latestResponse = allResponses[allResponses.length - 1];
+  var response = latestResponse.getItemResponses();
   var items = [];
   
   for (var i = 0; i < response.length ; i++) {
