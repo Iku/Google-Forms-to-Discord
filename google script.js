@@ -51,3 +51,8 @@ function onSubmit(e) {
 
     UrlFetchApp.fetch(POST_URL, options);
 };
+
+ScriptApp.newTrigger('onSubmit')
+  .forForm(FormApp.getActiveForm())
+  .onFormSubmit()
+  .create();

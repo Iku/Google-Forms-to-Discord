@@ -17,12 +17,7 @@
 ![Create a new Webhook.](https://pillow.s-ul.eu/9G6CaZ7P)
 ![Copy Webhook URL.](https://pillow.s-ul.eu/fcfrn7vt)
 
-7) Add a trigger.
-
-![button](https://candor.vip/untnd/5c5c4089c5d4c.png/raw)
-![adding trigger](https://candor.vip/untnd/5c5c40402e41b.png/raw)
-
-**8) Run the script by clicking the Play button!**
+**7) Run the script by clicking the Play button!**
 This gives the script the proper permissions to access form data.
 
-9) Submit a test response to make sure it works.
+8) Submit a test response to make sure it works.
