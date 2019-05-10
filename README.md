@@ -19,8 +19,8 @@
 
 7) Add a trigger.
 
-![button](https://candor.vip/untnd/5c5c4089c5d4c.png/raw)
-![adding trigger](https://candor.vip/untnd/5c5c40402e41b.png/raw)
+![button](https://i.ibb.co/ckTF92P/trigger-dropdown.png)
+![adding trigger](https://i.ibb.co/PFqTRmG/create-trigger.png)
 
 **8) Run the script by clicking the Play button!**
 This gives the script the proper permissions to access form data.
