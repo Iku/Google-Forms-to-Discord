@@ -21,4 +21,4 @@
 
 ![trigger settings](https://raw.githubusercontent.com/codeinteger6/files/master/images/trigger.jpg)
 
-9) Submit a test response to make sure it works.
+8) Submit a test response to make sure it works.
