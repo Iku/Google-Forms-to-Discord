@@ -12,17 +12,13 @@
 4) Paste the contents of `google script.js`.
 
 5) Open Discord and make a channel where you'd like the responses to be sent.
-6) Create a webhook, and copy the URL.
+6) Create a webhook and copy the URL. Replace `WEBHOOKURL` at the top of the script with the URL you copied.
 
 ![Create a new Webhook.](https://pillow.s-ul.eu/9G6CaZ7P)
 ![Copy Webhook URL.](https://pillow.s-ul.eu/fcfrn7vt)
 
-7) Add a trigger.
+7) Add a trigger by selecting Current project's triggers in the Edit menu, and creating a new trigger using the settings given below.
 
-![button](https://candor.vip/untnd/5c5c4089c5d4c.png/raw)
-![adding trigger](https://candor.vip/untnd/5c5c40402e41b.png/raw)
+![trigger settings](https://raw.githubusercontent.com/codeinteger6/files/master/images/trigger.jpg)
 
-**8) Run the script by clicking the Play button!**
-This gives the script the proper permissions to access form data.
-
-9) Submit a test response to make sure it works.
+8) Submit a test response to make sure it works.
