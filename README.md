@@ -19,6 +19,6 @@
 
 7) Add a trigger by selecting Current project's triggers in the Edit menu, and creating a new trigger using the settings given below.
 
-![trigger settings](https://raw.githubusercontent.com/codeinteger6/files/master/images/trigger.jpg)
+![trigger settings](https://user-images.githubusercontent.com/44692189/58762106-1236f880-856e-11e9-9a97-e275ffea9d65.jpg)
 
 8) Submit a test response to make sure it works.
