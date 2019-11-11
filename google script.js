@@ -38,6 +38,9 @@ function onSubmit(e) {
 
     var options = {
         "method": "post",
+        "headers": {
+            "Content-Type": "application/json",
+        }
         "payload": JSON.stringify({
             "embeds": [{
                 "title": "TOP TEXT CHANGE THIS IN SCRIPT",
