@@ -42,17 +42,14 @@ function onSubmit(e) {
             "Content-Type": "application/json",
         },
         "payload": JSON.stringify({
-            "content": "‌",
+            "content": "‌", // This is not an empty string
             "embeds": [{
                 "title": "TOP TEXT CHANGE THIS IN SCRIPT",
                 "fields": items,
                 "footer": {
                     "text": "BOTTOM TEXT CHANGE THIS IN SCRIPT"
                 }
-            }],
-            "headers": {
-                "content-type": "application/json"
-            }
+            }]
         })
     };
 
