@@ -38,9 +38,7 @@ function onSubmit(e) {
 
     var options = {
         "method": "post",
-        "headers": {
-            "Content-Type": "application/json",
-        },
+        "contentType": "application/json",
         "payload": JSON.stringify({
             "content": null, // This is not an empty string
             "embeds": [{
