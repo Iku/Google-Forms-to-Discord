@@ -46,6 +46,7 @@ function onSubmit(e) {
                 "fields": items,
                 "footer": {
                     "text": "BOTTOM TEXT CHANGE THIS IN SCRIPT"
+                    "color": "RANDOM"
                 }
             }]
         })
