@@ -1,4 +1,7 @@
-var POST_URL = "WEBHOOKURL";
+
+  var POST_URL = "webhook-url";
+
+var randomColor = Math.floor(Math.random()*16777215);
 
 function onSubmit(e) {
     var form = FormApp.getActiveForm();
@@ -44,8 +47,10 @@ function onSubmit(e) {
             "embeds": [{
                 "title": "TOP TEXT CHANGE THIS IN SCRIPT",
                 "fields": items,
+                "color": randomColor,
                 "footer": {
                     "text": "BOTTOM TEXT CHANGE THIS IN SCRIPT"
+                
                 }
             }]
         })
