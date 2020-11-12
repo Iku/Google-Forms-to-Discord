@@ -1,4 +1,4 @@
-var POST_URL = "WEBHOOKURL";
+var POST_URL = "WEBBHOOK URL";
 
 function onSubmit(e) {
     var form = FormApp.getActiveForm();
@@ -38,14 +38,17 @@ function onSubmit(e) {
 
     var options = {
         "method": "post",
-        "contentType": "application/json",
+        "headers": {
+            "Content-Type": "application/json",
+        },
         "payload": JSON.stringify({
-            "content": null, // This is not an empty string
+            "content": "‌",
             "embeds": [{
-                "title": "TOP TEXT CHANGE THIS IN SCRIPT",
+                "title": "Some nice title here",
+              "color": 33023, // This is optional, you can look for decimal colour codes at https://www.webtoolkitonline.com/hexadecimal-decimal-color-converter.html
                 "fields": items,
                 "footer": {
-                    "text": "BOTTOM TEXT CHANGE THIS IN SCRIPT"
+                    "text": "Some footer here"
                 }
             }]
         })
