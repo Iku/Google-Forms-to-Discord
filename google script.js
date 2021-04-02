@@ -43,6 +43,7 @@ function onSubmit(e) {
         },
         "payload": JSON.stringify({
             "content": "‌",
+            "timestamp": new Date().toISOString(),
             "embeds": [{
                 "title": "Some nice title here",
               "color": 33023, // This is optional, you can look for decimal colour codes at https://www.webtoolkitonline.com/hexadecimal-decimal-color-converter.html
