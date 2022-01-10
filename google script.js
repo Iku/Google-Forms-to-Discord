@@ -1,42 +1,41 @@
-var POST_URL = "WEBBHOOK URL";
+const POST_URL = "WEBBHOOK URL";
 
 function onSubmit(e) {
-    var form = FormApp.getActiveForm();
-    var allResponses = form.getResponses();
-    var latestResponse = allResponses[allResponses.length - 1];
-    var response = latestResponse.getItemResponses();
-    var items = [];
+    const response = e.response.getItemResponses();
+    let items = [];
 
-    for (var i = 0; i < response.length; i++) {
-        var question = response[i].getItem().getTitle();
-        var answer = response[i].getResponse();
+    for (const answer of response) {
+        const question = answer.getItem().getTitle();
+        const answer = answer.getResponse();
+        
         try {
-            var parts = answer.match(/[\s\S]{1,1024}/g) || [];
+            const parts = answer.match(/[\s\S]{1,1024}/g) || [];
         } catch (e) {
-            var parts = answer;
+            const parts = answer;
         }
 
-        if (answer == "") {
+        if (!answer) {
             continue;
         }
-        for (var j = 0; j < parts.length; j++) {
+        
+        for (const part of parts) {
             if (j == 0) {
                 items.push({
                     "name": question,
-                    "value": parts[j],
+                    "value": part,
                     "inline": false
                 });
             } else {
                 items.push({
                     "name": question.concat(" (cont.)"),
-                    "value": parts[j],
+                    "value": part,
                     "inline": false
                 });
             }
         }
     }
 
-    var options = {
+    const options = {
         "method": "post",
         "headers": {
             "Content-Type": "application/json",
