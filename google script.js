@@ -4,9 +4,9 @@ function onSubmit(e) {
     const response = e.response.getItemResponses();
     let items = [];
 
-    for (const answer of response) {
+    for (let answer of response) {
         const question = answer.getItem().getTitle();
-        const answer = answer.getResponse();
+        answer = answer.getResponse();
         
         try {
             const parts = answer.match(/[\s\S]{1,1024}/g) || [];
