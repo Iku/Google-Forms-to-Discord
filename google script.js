@@ -4,22 +4,23 @@ function onSubmit(e) {
     const response = e.response.getItemResponses();
     let items = [];
 
-    for (let answer of response) {
-        const question = answer.getItem().getTitle();
-        answer = answer.getResponse();
-        
+    for (const responseAnswer of response) {
+        const question = responseAnswer.getItem().getTitle();
+        const answer = responseAnswer.getResponse();
+        let parts = []
+
         try {
-            const parts = answer.match(/[\s\S]{1,1024}/g) || [];
+            parts = answer.match(/[\s\S]{1,1024}/g) || [];
         } catch (e) {
-            const parts = answer;
+            parts = answer;
         }
 
         if (!answer) {
             continue;
         }
-        
-        for (const part of parts) {
-            if (j == 0) {
+
+        for (const [index, part] of Object.entries(parts)) {
+            if (index == 0) {
                 items.push({
                     "name": question,
                     "value": part,
